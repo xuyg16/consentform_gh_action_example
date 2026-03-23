@@ -27,3 +27,5 @@ jobs:
         with:
          language: ${{ matrix.language }}
          project_toml: ${{ steps.read_toml.outputs.toml_content }}
+         token: ${{ secrets.CONSENT_FORM_ACTION }}
+         commit_files: true
