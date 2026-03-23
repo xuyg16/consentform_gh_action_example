@@ -12,12 +12,13 @@ jobs:
         language: 
           - de
           - en
+      max-parallel: 1
+
     steps:
     
       - name: checkout repo
         uses: actions/checkout@v4
       - name: Read project TOML file
-        shell: bash
         id: read_toml
         run: |
           toml_content=$(cat project_*.toml  | base64 -w0)
