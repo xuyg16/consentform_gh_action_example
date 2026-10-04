@@ -4,7 +4,7 @@ on:
     - project*.toml
     - .github/workflows/forms.yml
 
-perminssions:
+permissions:
   contents: write
 jobs:
 
