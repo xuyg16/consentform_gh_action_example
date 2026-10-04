@@ -3,6 +3,9 @@ on:
   paths:
     - project*.toml
     - .github/workflows/forms.yml
+
+perminssions:
+  contents: write
 jobs:
 
   ask-for-consent:
@@ -28,6 +31,6 @@ jobs:
         with:
          language: ${{ matrix.language }}
          project_toml: ${{ steps.read_toml.outputs.toml_content }}
-         token: ${{ secrets.CONSENT_FORM_ACTION }}
+         token: ${{ github.token }}
          commit_files: true
 # test workflow
