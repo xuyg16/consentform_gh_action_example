@@ -33,3 +33,5 @@ jobs:
          project_toml: ${{ steps.read_toml.outputs.toml_content }}
          token: ${{ github.token }}
          commit_files: true
+
+   # final test
