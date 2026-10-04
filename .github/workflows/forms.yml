@@ -34,3 +34,4 @@ jobs:
          token: ${{ github.token }}
          commit_files: true
 # test workflow
+# rerun after checkout fix
